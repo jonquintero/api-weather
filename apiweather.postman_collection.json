@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "c1d3fc33-3f8a-4953-9f78-dd0728d5129e",
+		"name": "apiweather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "apiweather",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"city_name\": \"Caracas\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{hostname}}/api/check",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"check"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
