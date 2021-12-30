@@ -14,6 +14,13 @@ class CheckWeatherController extends Controller
 {
     use ApiWeatherService;
 
+
+    /**
+     * @author Jonathan Quintero
+     * check estatus Request Weather
+     * @param CheckWeatherRequest $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function __invoke(CheckWeatherRequest $request): \Illuminate\Http\JsonResponse
     {
 
