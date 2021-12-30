@@ -23,7 +23,6 @@ class CheckWeatherController extends Controller
         /***** check estatus Request *******/
        if($httpResponse->status() == 200){
 
-         // return response()->json($httpResponse->json());
            $apiWeatherProcess = new ApiWeatherHelper($httpResponse, $request);
 
            return response()->json([
